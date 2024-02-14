@@ -1,0 +1,77 @@
+<h1>Insertar Doctores</h1>
+<p>Por favor ingresa los datos solicitados..</p>
+
+<form action="/submit" method="POST">
+   <label for="IdDoctor"><b>ID</b></label>
+   <input type="text" placeholder="Ingresa id" name="id" required />
+
+   <label for="Nombre"><b>Nombre</b></label>
+   <input type="text" placeholder="Ingresa un nombre..." name="nombre" required />
+
+   <label for="Especialidad"><b>Especialidad</b></label>
+   <textarea rows="5" cols="60" placeholder="Ingresa la especialidad..." name="especialidad"></textarea>
+
+   <label for="HospitalId"><b>ID</b></label>
+   <input type="text" placeholder="Ingresa id" name="hospital_id" required />
+
+   <button type="submit">Insertar</button>
+</form>
+
+<style>
+   body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+      display: row;
+   }
+
+   h1 {
+      color: #1d321f;
+      text-align: center;
+      margin-top: 1rem;
+   }
+
+   p {
+      color: #1d321f;
+      text-align: center;
+   }
+
+   form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+   }
+
+   input[type="text"],
+   input[type="number"],
+   textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+   }
+
+   button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+   }
+
+   button[type="submit"]:hover {
+      background-color: #45a049;
+   }
+</style>
